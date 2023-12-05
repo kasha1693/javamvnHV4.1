@@ -5,7 +5,7 @@ import ru.netology.BonusService;
 public class BonusServiceTest {
     @Test
     void shouldCalculateForRegisteredAndUnderLimit() {
-       BonusService service  = new BonusService();
+        BonusService service = new BonusService();
 
         // подготавливаем данные:
         long amount = 1000;
@@ -34,9 +34,10 @@ public class BonusServiceTest {
         // производим проверку (сравниваем ожидаемый и фактический):
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void shouldCalculateForUnRegisteredAndUnderLimit() {
-        BonusService service  = new BonusService();
+        BonusService service = new BonusService();
 
         // подготавливаем данные:
         long amount = 1000;
